@@ -9,7 +9,6 @@ import Link from "next/link";
 export default function CardButton({id, title, description, img, src}:IBoards){
     return (
         <div className="max-w-sm b-white border items-center border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-        {/* <Link href={`${PG.ARTICLE}/mylist/${id}`}> */}
         <Link href="">
             <div className="flex justify-center mt-5">
                 {img}

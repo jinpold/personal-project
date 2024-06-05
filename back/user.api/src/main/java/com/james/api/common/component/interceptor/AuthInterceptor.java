@@ -17,8 +17,7 @@ import java.util.stream.Stream;
 @Component
 @RequiredArgsConstructor
 public class AuthInterceptor implements HandlerInterceptor {
-    // 인터페이스 구현체는 인터셉터이고 서블릿 컨테이너 내부에 있음.
-    // 인터셉터를 구현하면 자동적으로 서블릿에 자리 잡는다.
+
 
     private final JwtProvider jwtProvider;
     private final UserRepository userRepository;

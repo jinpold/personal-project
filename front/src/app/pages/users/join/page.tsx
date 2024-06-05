@@ -47,7 +47,6 @@ export default function Join2() {
               <div
                 className="m-8 xl:m-12 w-full bg-contain bg-center bg-no-repeat"
                 style={{
-                  // backgroundImage: `url(https://www.tailwindtap.com/assets/common/marketing.svg)`,
                 }}
               ></div>
             </div>

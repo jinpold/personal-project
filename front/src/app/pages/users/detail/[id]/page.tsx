@@ -25,13 +25,12 @@ export default function UserDetailPage({params}:any) {
 
   const onSubmit = (data: any) => {
     console.log(JSON.stringify(data));
-    // userInfo에서 userId를 추출하여 data 객체에 추가
+  
     data.id = userInfo.userId;
     dispatch(modifyUserById(data))
       .then((res:any)=>{
         alert('user information modify success.' + res.payload.id)
         location.reload();
-        // router.push(`${PG.USER}/detail/${res.payload.id}`)
       })
       .catch((error:any)=>{
         alert('user information modify fail.')
@@ -42,7 +41,6 @@ export default function UserDetailPage({params}:any) {
   return (
     <Card sx={{ padding: '1.5rem', height: 'auto', maxWidth: '600px', margin: 'auto', marginTop: '2rem', borderRadius: '12px', border: '2px solid #003366' }}>
       <div className="mb-4 text-center">
-        {/* 회원 ID  {MyTypography(jwtDecode<any>(parseCookies().accessToken).username, "2.5rem")} */}
       </div>
   
       <div className="items-center flex justify-center px-4 lg:px-0 py-4">
@@ -51,7 +49,6 @@ export default function UserDetailPage({params}:any) {
             <div
               className="m-6 xl:m-8 w-full bg-contain bg-center bg-no-repeat"
               style={{
-                // backgroundImage: `url(https://www.tailwindtap.com/assets/common/marketing.svg)`,
               }}
             ></div>
           </div>
@@ -151,7 +148,3 @@ export default function UserDetailPage({params}:any) {
     </Card>
   );
 }
-
-
-      {/* <input type="text" {...register('id', { required: true })} value={userInfo.id} hidden readOnly/>
-      <input type="text" {...register('username', { required: true })} value={userInfo.username} hidden readOnly/> */}

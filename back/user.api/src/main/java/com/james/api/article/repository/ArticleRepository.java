@@ -16,18 +16,4 @@ public interface ArticleRepository extends JpaRepository<Article, Long> {
             + "from articles a where a.board.id = :boardId order by a.id desc")
     List<Article> getArticleByBoardId(@Param("boardId") Long boardId);
 
-
-//    // Native 쿼리 방식 (비사용을 추천)
-//    @Query(value = "select + from articles a where a.board.id = 1 ", nativeQuery = true)
-//    List<Map<String, Object>> getQnaArticle(@Param("boardId") Long boardId);
-
-//    // JPQL Return Type DTO
-//    String articleDtoMapping = "new com.james.api.article.model.ArticleDto" +
-//            "("+"a.id, a.title, a.content, a.writer.id, a.board.id " +
-//            ", a.regData, a.modDate)";
-//    @Query("select " + articleDtoMapping +
-//            "from articles a where a.board.id = :boardId ")
-//    List<Article> getArticleDTPsByBoardId(@Param("boardId") Long boardId);
-
-//    List<Article> findAllByOrderByIdDesc();
 }

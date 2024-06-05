@@ -3,7 +3,7 @@ package com.james.api.common.model;
 import java.util.ArrayList;
 
 public class Inventory<T> {
-    private ArrayList<T> inventory; // 원래 있는걸 감싸는걸 랩핑이라고함.
+    private ArrayList<T> inventory;
 
     public Inventory(ArrayList<T> inventory) {
         this.inventory = new ArrayList<>();

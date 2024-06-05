@@ -23,15 +23,12 @@ const cards = [
 ];
 
 
-// 리액트 - 리덕스는 실행순서가 하향식이 아니다. -> 즉시실행함수부터 먼저 실행됨.
-// 하기 page는 .tsx이다. return은 jsx로 와야한다.
 export default function ArticlesPage ({data}:any) {
     const dispatch = useDispatch()
-    // const [articles, setArticles] = useState([])
-    const allArticles: [] = useSelector(getAllArticles) // 4번 실행 (리덕스 통해서 실행가능)
+    const allArticles: [] = useSelector(getAllArticles) 
     const countArticles = useSelector(getCount)
 
-    if(allArticles !== undefined){ // 슬라이스 fulfilled의 전후를 확인하는 로직  (생략가능)
+    if(allArticles !== undefined){ 
         console.log('allArticles is not undefined')
 
         console.log('length is '+ allArticles.length)
@@ -42,13 +39,12 @@ export default function ArticlesPage ({data}:any) {
         console.log('allArticles is undefined')
     }
  
-    useEffect(() => { // 1번실행  -> 즉시실행 함수 
-        dispatch(findAllArticles(1))  // dispatch 2번실행 // (fetchAllArticles) = thunk 3번실행 (리덕스에 실행)
+    useEffect(() => { 
+        dispatch(findAllArticles(1))  
         dispatch(findCount())
-    }, [dispatch]) // <- [] 안에 dispatch를 넣었다고 가정하고 dispatch(상태)가 바뀌면 useEffect 다시 실행한다.
+    }, [dispatch]) 
     
-  
-    // 하기 리턴은 jsx로 작성해야함.
+
     return (<>
     <div className="flex flex-col  items-center justify-center w-full bg-white-300">
        
@@ -60,11 +56,6 @@ export default function ArticlesPage ({data}:any) {
               className="flex-shrink-0 w-full snap-center justify-center items-center"
               key={index}
             >
-              {/* <img
-                src={data}
-                alt="Images to scroll horizontal"
-                className="w-full h-[500px]"
-              /> */}
             </section>
             
           );

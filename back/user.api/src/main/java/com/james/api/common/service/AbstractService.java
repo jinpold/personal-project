@@ -10,11 +10,11 @@ public abstract class AbstractService <T> {
 
     public abstract List<T> findAll() throws SQLException;
 
-    public abstract Optional<T> findById(long id); // id = 머신이 사용하는 숫자 아이디
+    public abstract Optional<T> findById(long id);
 
     public abstract String count();
 
-    public  abstract  Optional<T> getOne(String id); // id = 사람이 쓰는 영문 아이디
+    public  abstract  Optional<T> getOne(String id);
 
     public  abstract  String delete(T t);
 

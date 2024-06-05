@@ -1,5 +1,4 @@
 package com.james.api.common.enums;
-
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor

@@ -23,6 +23,6 @@ public class BoardDto {
     private String regDate;
     private String modDate;
 
-    //    @Builder.Default    // = List를 디폴트 타입으로 준다.
-    private List<Article> article; // = new ArrayList<>()
+
+    private List<Article> article;
 }

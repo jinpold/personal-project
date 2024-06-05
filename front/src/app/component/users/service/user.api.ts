@@ -4,7 +4,7 @@ import { IUser } from "../model/user.model"
 export const fetchAllUsersAPI = async (page: number) => {
     try {
         const response = await instance().get('/users/list', {
-            params: { page, limit: 10 } //1page 당 10 게시글
+            params: { page, limit: 10 } 
         })
         return response.data
     } catch (error) {

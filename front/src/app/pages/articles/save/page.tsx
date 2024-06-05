@@ -29,7 +29,7 @@ const WriterArticlePage: NextPage = () => {
   ];
 
   const onSubmit = (data: any) => {
-    console.log('폼 데이터:', data); // 디버그 로그 추가
+    console.log('폼 데이터:', data); 
     alert(JSON.stringify(data));
     dispatch(findArticlePost(data))
       .then((res: any) => {
@@ -39,7 +39,7 @@ const WriterArticlePage: NextPage = () => {
         router.refresh();
       })
       .catch((err: any) => {
-        console.error('게시글 작성 오류:', err); // 오류 로그 추가
+        console.error('게시글 작성 오류:', err); 
       });
   };
 

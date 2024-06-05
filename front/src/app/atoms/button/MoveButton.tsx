@@ -3,7 +3,6 @@
 import { useRouter } from "next/navigation"
 
 interface IMoveButton {
-    // id: Number,
     text: string,
     path: string
 }

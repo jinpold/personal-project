@@ -34,14 +34,12 @@ public class AuthServiceImpl implements AuthService {
         Claims claims = (Claims) Jwts.claims();
         claims.put("username", user.getUsername());
 
-//        LocalDateTime now = LocalDateTime.now();
-//        LocalDateTime tokenValidTime = now.plusSeconds(24*60*60*1000); //유효시간
+
 
         String token = Jwts.builder()
                 .claims()
                 .add("iss", "james.co.kr")
                 .add("sub", "user Auth")
-//                .add("exp", tokenValidTime)
                 .add("userId", user.getId())
                 .add("username", user.getUsername())
                 .add("job", "admin") // 관리자(ad), 소비자

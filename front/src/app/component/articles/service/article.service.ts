@@ -5,16 +5,14 @@ import { findAllArticlesAPI, findArticleByIdAPI, findArticlePostAPI, findBoardMy
 
 
 
-export const findAllArticles: any = createAsyncThunk( // 데이터를 비동기로 만들어 자바와 주고 받으려고,
-    'articles/findAllArticles',                        // createAsyncThunk가 없으면 동기로 보내는 것
+export const findAllArticles: any = createAsyncThunk( 
+    'articles/findAllArticles',                        
     async (page: number) => {
         console.log('findAllArticles page : ' + page)
-        const data: any = await findAllArticlesAPI(page); // axios = 자바와 연결해주는 것
+        const data: any = await findAllArticlesAPI(page); 
 
         const { message, result }: any = data;
-        // console.log('----- API를 사용한 경우 ------')
-        // console.log('message : ' + message)
-        // console.log(JSON.stringify(result))
+
     
         return data
     }
@@ -22,7 +20,7 @@ export const findAllArticles: any = createAsyncThunk( // 데이터를 비동기�
 export const findArticleById: any = createAsyncThunk( 
     'articles/findArticleById',                      
     async (id: number) => (await findArticleByIdAPI(id))
-    //return 생략
+   
 )
 
 export const findModify: any = createAsyncThunk( 
@@ -45,7 +43,7 @@ export const findCount: any = createAsyncThunk(
     async () => (await findCountAPI())
 )
 
-export const findBoardMyList: any = createAsyncThunk( //데이터(api)를 비동기로 만들어서 자바와 주고 받는 것 
+export const findBoardMyList: any = createAsyncThunk( 
     'articles/findBoardMyList',                      
     async (id:number) => (await findBoardMyListAPI(id))
 )

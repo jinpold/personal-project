@@ -11,7 +11,7 @@ import { IBoards } from "@/app/component/boards/model/board.model";
 export default function BoardCards() {
   const router = useRouter();
   const dispatch = useDispatch();
-//   const boards: IBoards[] = useSelector(getAllBoards);
+
 
   const allBoards = [
     { id: 1, title: "고객센터", description: "고객센터 게시판 목록으로 갑니다. ", src:"http://localhost:3000/pages/articles/mylist/1", img: <CallIcon /> },
@@ -21,7 +21,7 @@ export default function BoardCards() {
   ];
 
   useEffect(() => {
-    dispatch(findAllBoards(1)); // 숫자 1 <- 1페이지를 의미
+    dispatch(findAllBoards(1)); 
   }, [dispatch]);
 
   return (

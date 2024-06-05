@@ -24,7 +24,7 @@ export const linkButtonTitles = [
 const theme = createTheme({
     palette: {
         primary: {
-            main: '#1e3a8a', // This is the color for bg-blue-950 in Tailwind CSS
+            main: '#1e3a8a', 
         },
     },
 });
@@ -46,6 +46,3 @@ export default function LinkButton({ id, title, path }: ILinkButton) {
         </ThemeProvider>
     );
 }
-
-// { id: 2, title: 'counter', path: `${PG.DEMO}/counter` },
-   // { id:5, title: 'article list', path: `${PG.ARTICLE}/list` },

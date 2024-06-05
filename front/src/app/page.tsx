@@ -28,7 +28,6 @@ const Home:NextPage=()=> {
             <button className="w-44 h-16 bg-gray-950 rounded-lg hover:bg-pink-700" 
             onClick={()=>window.open("C:\\Users\\bitcamp\\Gisa\\lixgit\\front\\src\\app\\pages\\jusik\\SE\\news\\kr-state.html")}>
               <div className="text-white font-medium font-['Inter'] leading-normal">
-                {/* <Component onClick={()=>window.open("C:\\Users\\bitcamp\\Gisa\\lixgit\\front\\src\\app\\pages\\jusik\\SE\\news\\kr-state.html")}></Component> */}
                 Chart page
                 </div>
             </button>

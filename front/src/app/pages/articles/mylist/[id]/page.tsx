@@ -40,11 +40,6 @@ export default function MyListPage (props:any) {
               className="flex-shrink-0 w-full snap-center justify-center items-center"
               key={index}
             >
-              {/* <img
-                src={data}
-                alt="Images to scroll horizontal"
-                className="w-full h-[500px]"
-              /> */}
             </section>
           );
         })}

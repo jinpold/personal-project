@@ -47,7 +47,7 @@ const UpdateArticlePage:NextPage = () => {
     router.back();
   }
 
-   useEffect(()=>{},[]) // 보드리스트가 넘어오게 해야한다.  
+   useEffect(()=>{},[]) 
 
 
     return(<>
@@ -86,9 +86,6 @@ const UpdateArticlePage:NextPage = () => {
         <div className="btn  overflow-hidden relative w-30 bg-white text-blue-500 p-3 px-4 rounded-xl font-bold uppercase -- before:block before:absolute before:h-full before:w-1/2 before:rounded-full
         before:bg-pink-400 before:top-0 before:left-1/4 before:transition-transform before:opacity-0 before:hover:opacity-100 hover:text-200 hover:before:animate-ping transition-all duration-00"
           onClick={cancelHandler}>Cancel</div>
-        {/* <div className="btn  overflow-hidden relative w-30 bg-blue-500 text-white p-3 px-8 rounded-xl font-bold uppercase -- before:block before:absolute before:h-full before:w-1/2 before:rounded-full
-        before:bg-pink-400 before:top-0 before:left-1/4 before:transition-transform before:opacity-0 before:hover:opacity-100 hover:text-200 hover:before:animate-ping transition-all duration-00"
-          onClick={postHandler}> Post </div> */}
           <input type="submit" value="SUBMIT"/>
       </div>
     </div>

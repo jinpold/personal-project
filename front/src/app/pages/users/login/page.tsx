@@ -33,9 +33,7 @@ const Login: NextPage = () => {
     const formRef = useRef<HTMLInputElement>(null)
 
     const handleUsername = (e: any) => {
-        // 정규표현식 : 영어 대소문자로 시작하는 6~20자의 영어소문자 또는 숫자
-        // 한글 : ㄱ-힣,  /g 전역
-        // const ID_CHECK = /^[a-zA-Z0-9]+[a-zA-Z0-9]{5,19}$/g
+    
         const ID_CHECK = /^[a-zA-Z0-9][a-zA-Z0-9]{5,19}$/g;
 
         ID_CHECK.test(user.username + "") ? setIsWrongId('false') : setIsWrongId('true');
@@ -98,7 +96,6 @@ const Login: NextPage = () => {
                     <div
                         className="hidden md:block lg:w-1/2 bg-cover bg-indigo-950"
                         style={{
-                            // backgroundImage: `url(https://www.tailwindtap.com//assets/components/form/userlogin/login_tailwindtap.jpg)`,
                         }}
                     ></div>
                     <div className="w-full p-8 lg:w-1/2">

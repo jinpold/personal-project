@@ -2,7 +2,6 @@ package com.james.api.common.enums;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
-//import org.springframework.security.core.GrantedAuthority;
 import java.util.Arrays;
 @RequiredArgsConstructor
 @Getter
@@ -14,8 +13,4 @@ public enum Role { //implements GrantedAuthority
     public static Role of(String code) {
         return Arrays.stream(Role.values()).filter(i -> i.getCode().equals(code)).findAny().get();
     }
-//    @Override
-//    public String getAuthority() {
-//        return name();
-//    }
 }

@@ -1,7 +1,4 @@
 package com.james.api.common.model;
-
-import com.james.api.common.model.Inventory;
-
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -28,12 +25,11 @@ public class Box<T> {
     }
 
     public void put(List<String> keys, Inventory<T> values) {
-        box = new HashMap<>(); // 다른로직이랑 섞일까봐 생성자 새로 생성함
-        for(int i =0; i<box.size(); i++){ // 람다 리스트 2개 담는 방법
+        box = new HashMap<>();
+        for(int i =0; i<box.size(); i++){
             box.put(keys.get(i), values.get(i));
         }
         box.forEach((k, v)-> System.out.println(String.format("%s: %s", k, v)));
-        // 람다식 출력
 
     }
 
