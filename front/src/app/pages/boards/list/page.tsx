@@ -14,10 +14,9 @@ export default function BoardCards() {
 
 
   const allBoards = [
-    { id: 1, title: "고객센터", description: "고객센터 게시판 목록으로 갑니다. ", src:"http://localhost:3000/pages/articles/mylist/1", img: <CallIcon /> },
-    { id: 2, title: "Q&A게시판", description: "QnA 게시판 목록으로 갑니다. ", src:"http://localhost:3000/pages/articles/mylist/2", img: <NewsIcon /> },
-    { id: 3, title: "NEWS", description: "주식& 경제 뉴스 목록으로 갑니다. ", src:"http://localhost:3000/pages/jusik/SE/news", img: <ListIcon /> },
-    { id: 4, title: "Chart", description: "차트 게시판 목록으로 갑니다. ", src:"", img: <ChartIcon /> },
+    { id: 1, title: "모집 게시판", description: "스터디 모집 게시판 목록으로 갑니다. ", src:"http://localhost:3000/pages/articles/mylist/1", img: <CallIcon /> },
+    { id: 2, title: "Q&A게시판", description: "Q&A 게시판 목록으로 갑니다. ", src:"http://localhost:3000/pages/articles/mylist/2", img: <NewsIcon /> },
+    { id: 3, title: "교육 NEWS", description: "교육&정보 뉴스 목록으로 갑니다. ", src:"http://localhost:3000/pages/jusik/SE/news", img: <ListIcon /> },
   ];
 
   useEffect(() => {

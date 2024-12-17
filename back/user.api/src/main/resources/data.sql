@@ -1,6 +1,7 @@
 
 # select * from users;
 
+
 insert into users (id, username, password, name, age, sex, email, address, phone, asset, mbti, investment_propensity, mod_date, reg_date) values (1, 'gjwlsdj12#123', 'pO2(eO73)%@', '제갈민', '6403211570892', 'male', 'jgs0318@gmail.com', '서울특별시 강남구', '010-2212-0694', 8200000, 'ISTJ', '보수적', '2023-04-08 18:34:19', '2023-12-31 06:36:58');
 insert into users (id, username, password, name, age, sex, email, address, phone, asset, mbti, investment_propensity, mod_date, reg_date) values (2, 'cmastersond125', 'dlwldms123@', '김현지', '8005222367521', 'female', 'sjrkchdkdy@gmail.com', '부산광역시 해운대구', '010-4351-9876', 9400000, 'ENFP', '공격적', '2024-03-11 00:53:52', '2023-12-08 13:55:58');
 insert into users (id, username, password, name, age, sex, email, address, phone, asset, mbti, investment_propensity, mod_date, reg_date) values (3, 'scurbishleyd23', 'qkrwnsdud3@', '배광수', '0201013512381', 'male', 'bgh950201@gmail.com', '대구광역시 수성구', '010-3355-9088', 7800000, 'INTP', '중립적', '2023-10-08 23:58:44', '2023-06-05 04:39:48');

@@ -15,7 +15,7 @@ public class CrawlerRepository {
     private List<Crawler> articles;
     public List<Crawler> findNews() throws IOException {
         try {
-            Document doc = Jsoup.connect("https://news.naver.com/breakingnews/section/101/258").get();
+            Document doc = Jsoup.connect("https://news.naver.com/breakingnews/section/102/250").get();
             this.articles = new ArrayList<>();
 
             Elements articleElements = doc.select("ul.sa_list > li.sa_item");
